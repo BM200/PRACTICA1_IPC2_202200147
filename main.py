@@ -15,13 +15,13 @@ def main():
 
     biblioteca = []  # Lista para almacenar los materiales registrados  
     while True:
-        print("\n----- Sistema de Gestión de Biblioteca ---:")
+        print("\n----- MENU PRINCIPAL ---:")
         print("1. Registrar nuevo material")
         print("2. Gestionar materiales registrados")
         print("3. Mostrar todos los materiales")
         print("4. Salir")
         print("="*50)
-        opcion = input("Selecciones la gestion que desea realizar. ")
+        opcion = input("Seleccione la gestión que desea realizar. ")
         
         if opcion == "1":
             registrar_material(biblioteca)
@@ -31,6 +31,7 @@ def main():
             mostrar__todos_los_materiales(biblioteca)
         elif opcion == "4":
             print("Saliendo del sistema...")
+
             break
         else:
             print("Opción no válida. Por favor, seleccione una opción del 1 al 4.")
